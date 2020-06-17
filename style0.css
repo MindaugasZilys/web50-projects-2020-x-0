@@ -1,0 +1,99 @@
+/* #####################################################
+General styling
+##################################################### */
+
+body {
+  background-color: lightgray;
+}
+
+* {
+  font-family: sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+hr {
+  border: 2px solid gray;
+}
+
+/* #####################################################
+Content styling
+##################################################### */
+
+.topLogo {
+  margin-bottom: 50px;
+}
+
+.midleContent {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 30px;
+  margin: 50px;
+}
+
+.container-fluid {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.index-img {
+  border-radius: 50%;
+}
+
+.row {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.container > div {
+  width: 250px;
+  padding: 20px;
+  background-color: yellow;
+  border: solid 2px;
+  border-radius: 10%;
+  margin: 10px;
+}
+
+
+/* #####################################################
+Media queries
+##################################################### */
+
+
+@media print {
+  .screenOnly {
+    display: none;
+  }
+}
+
+@media (max-width: 799px) {
+  .midleContent {
+    font-size: 20px;
+  }
+  #serviceDescribtion li h3 {
+    font-size: 30px;
+  }
+  #serviceDescribtion li p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 599px) {
+  .midleContent {
+    font-size: 10px;
+  }
+  #serviceDescribtion li h3 {
+    font-size: 20px;
+  }
+  #serviceDescribtion li p {
+    font-size: 10px;
+  }
+}
